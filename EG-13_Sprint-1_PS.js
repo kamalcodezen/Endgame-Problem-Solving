@@ -263,3 +263,37 @@ function findMode(arr) {
 // ```````````````````````
 
 
+/**
+ * 10. Natural Sorting of Strings with Embedded Numbers
+ *
+ * @param {string[]} arr
+ * @return {string[]}
+ */
+function naturalSort(arr) {
+    return [...arr].sort((a, b) => {
+        const aParts = a.split(/(\d+)/);
+        const bParts = b.split(/(\d+)/);
+
+        const length = Math.min(aParts.length, bParts.length);
+
+        for (let i = 0; i < length; i++) {
+            const aPart = aParts[i];
+            const bPart = bParts[i];
+
+            const aIsNumber = /^\d+$/.test(aPart);
+            const bIsNumber = /^\d+$/.test(bPart);
+
+            if (aIsNumber && bIsNumber) {
+                const difference = Number(aPart) - Number(bPart);
+
+                if (difference !== 0) {
+                    return difference;
+                }
+            } else if (aPart !== bPart) {
+                return aPart.localeCompare(bPart);
+            }
+        }
+
+        return aParts.length - bParts.length;
+    });
+}
