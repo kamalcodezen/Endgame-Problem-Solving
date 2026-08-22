@@ -78,3 +78,19 @@ function findGCD(a, b) {
 
     return a;
 }
+
+
+
+// ```````````````````````````````
+
+
+/**
+ * 04. Calculate the Least Common Multiple (LCM)
+ *
+ * @param {number} a
+ * @param {number} b
+ * @return {number}
+ */
+function findLCM(a, b) {
+    return (a * b) / findGCD(a, b);
+}
