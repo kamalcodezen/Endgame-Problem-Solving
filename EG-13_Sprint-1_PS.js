@@ -201,3 +201,31 @@ function findMedian(nums) {
 // `````````````````````````````````
 
 
+/**
+ * 08. Find the Second Largest Number in an Array
+ *
+ * @param {number[]} nums
+ * @return {number|null}
+ */
+function findSecondLargest(nums) {
+    let largest = -Infinity;
+    let secondLargest = -Infinity;
+
+    for (const num of nums) {
+        if (num > largest) {
+            secondLargest = largest;
+            largest = num;
+        } else if (num > secondLargest && num !== largest) {
+            secondLargest = num;
+        }
+    }
+
+    return secondLargest === -Infinity ? null : secondLargest;
+}
+
+
+
+// ````````````````````````````````
+
+
+
