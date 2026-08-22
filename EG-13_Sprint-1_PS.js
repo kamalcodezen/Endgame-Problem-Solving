@@ -229,3 +229,37 @@ function findSecondLargest(nums) {
 
 
 
+/**
+ * 09. Find Most Frequent Element (Mode) in an Array
+ *
+ * @param {Array} arr
+ * @return {*}
+ */
+function findMode(arr) {
+    if (arr.length === 0) {
+        return null;
+    }
+
+    const frequency = new Map();
+
+    let mode = arr[0];
+    let maxFrequency = 0;
+
+    for (const item of arr) {
+        const count = (frequency.get(item) || 0) + 1;
+
+        frequency.set(item, count);
+
+        if (count > maxFrequency) {
+            maxFrequency = count;
+            mode = item;
+        }
+    }
+
+    return mode;
+}
+
+
+// ```````````````````````
+
+
