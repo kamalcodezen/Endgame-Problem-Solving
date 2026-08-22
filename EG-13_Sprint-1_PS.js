@@ -56,3 +56,25 @@ function generateFibonacci(n) {
 
     return result;
 }
+
+
+// ````````````````````````````
+
+
+
+/**
+ * 03. Calculate the Greatest Common Divisor (GCD)
+ *
+ * @param {number} a
+ * @param {number} b
+ * @return {number}
+ */
+function findGCD(a, b) {
+    while (b !== 0) {
+        const remainder = a % b;
+        a = b;
+        b = remainder;
+    }
+
+    return a;
+}
