@@ -177,3 +177,27 @@ function mergeSortedArrays(arr1, arr2) {
 // ````````````````````````````````````
 
 
+/**
+ * 07. Find the Median of an Unsorted Array
+ *
+ * @param {number[]} nums
+ * @return {number}
+ */
+function findMedian(nums) {
+    const sortedNums = [...nums].sort((a, b) => a - b);
+
+    const middleIndex = Math.floor(sortedNums.length / 2);
+
+    if (sortedNums.length % 2 === 0) {
+        return (
+            (sortedNums[middleIndex - 1] + sortedNums[middleIndex]) / 2
+        );
+    }
+
+    return sortedNums[middleIndex];
+}
+
+
+// `````````````````````````````````
+
+
