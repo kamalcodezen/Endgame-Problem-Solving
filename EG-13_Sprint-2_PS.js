@@ -70,7 +70,6 @@ function isPalindrome(str) {
 }
 
 
-
 /**
  * ============================================================
  * 4. Sum Array Elements
