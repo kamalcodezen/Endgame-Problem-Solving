@@ -349,8 +349,6 @@ const longestConsecutive = function (nums) {
 /* =========================================================
    10. Sort Colors
    ========================================================= */
-
-   
 /**
  * Write an in-place sorting function that sorts an array
  * containing only 0, 1, and 2 so that the same colors are
