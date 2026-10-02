@@ -245,7 +245,6 @@ const searchRange = function (nums, target) {
 
     return [findFirst(), findLast()];
 };
-
 /**
  * 09. Permutation in String
  *
