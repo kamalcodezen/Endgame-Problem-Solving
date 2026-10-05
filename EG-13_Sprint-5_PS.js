@@ -312,7 +312,6 @@ const checkSubarraySum = function (nums, k) {
 /* =========================================================
    10. Daily Temperatures
    ========================================================= */
-
 /**
  * @param {number[]} temperatures
  * @return {number[]}
