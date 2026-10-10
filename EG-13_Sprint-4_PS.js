@@ -39,7 +39,6 @@ const isIsomorphic = function (s, t) {
 
 /**
  * 02. Word Pattern
- *
  * @param {string} pattern
  * @param {string} s
  * @return {boolean}
