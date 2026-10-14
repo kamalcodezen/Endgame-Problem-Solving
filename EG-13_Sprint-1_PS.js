@@ -56,8 +56,6 @@ function generateFibonacci(n) {
 
     return result;
 }
-
-
 // ````````````````````````````
 /**
  * 03. Calculate the Greatest Common Divisor (GCD)
