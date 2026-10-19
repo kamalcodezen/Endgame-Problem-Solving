@@ -83,8 +83,6 @@ function sumArray(nums) {
 
     return sum;
 }
-
-
 /**
  * ============================================================
  * 5. Count Vowels
