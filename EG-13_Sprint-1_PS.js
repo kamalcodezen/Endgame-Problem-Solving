@@ -77,8 +77,6 @@ function findGCD(a, b) {
 
 
 // ```````````````````````````````
-
-
 /**
  * 04. Calculate the Least Common Multiple (LCM)
  *
